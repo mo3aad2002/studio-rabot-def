@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 26% 95%;        /* #F7F4EF */
+    --foreground: 0 0% 11%;          /* #1C1C1C */
+
+    --card: 36 26% 95%;
+    --card-foreground: 0 0% 11%;
+
+    --popover: 36 26% 95%;
+    --popover-foreground: 0 0% 11%;
+
+    --primary: 0 0% 11%;             /* #1C1C1C */
+    --primary-foreground: 36 26% 95%;
+
+    --secondary: 30 12% 88%;
+    --secondary-foreground: 0 0% 11%;
+
+    --muted: 33 19% 88%;             /* #E8E2DA */
+    --muted-foreground: 0 0% 35%;    /* #5A5A5A */
+
+    --accent: 27 14% 48%;            /* #8B7B6B */
+    --accent-foreground: 36 26% 95%;
+
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 36 26% 95%;
+
+    --border: 33 19% 85%;            /* #E8E2DA-ish */
+    --input: 33 19% 85%;
+    --ring: 0 0% 11%;
+
+    --radius: 0;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5,
+  .display-serif {
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  .display-serif {
+    font-family: 'Abel', sans-serif;
+  }
+  .label-eyebrow {
+    @apply text-[11px] uppercase tracking-[0.28em] text-muted-foreground font-medium;
+  }
+  .hairline {
+    @apply h-px w-full bg-border;
+  }
+  .link-underline {
+    position: relative;
+  }
+  .link-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 1px;
+    width: 0;
+    background: hsl(var(--foreground));
+    transition: width 350ms cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  .link-underline:hover::after,
+  .link-underline.active::after {
+    width: 100%;
+  }
+  .btn-sharp {
+    @apply inline-block bg-foreground text-background px-8 py-4 text-sm tracking-[0.18em] uppercase transition-all duration-500;
+  }
+  .btn-sharp:hover {
+    background: hsl(var(--accent));
+    letter-spacing: 0.24em;
+  }
+  .btn-ghost {
+    @apply inline-block border border-foreground text-foreground px-8 py-4 text-sm tracking-[0.18em] uppercase transition-all duration-500;
+  }
+  .btn-ghost:hover {
+    @apply bg-foreground text-background;
+  }
+}
+
+@keyframes vertical-marquee {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+.vertical-marquee {
+  animation: vertical-marquee 40s linear infinite;
+}
+
+::selection {
+  background: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
