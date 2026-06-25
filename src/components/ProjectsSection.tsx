@@ -11,10 +11,23 @@ const filters: { key: Filter; label: string }[] = [
   { key: "schetsontwerpen", label: "Schetsontwerpen" },
 ];
 
+// Featured order for the homepage grid: these 4 lead, the rest follow in their original order.
+const FEATURED_TITLES = [
+  "Haardmeubel met verwarmde zitbank",
+  "Landelijke woning",
+  "Leefruimte strak landelijk",
+  "Kantoorruimte in bijgebouw",
+];
+
+const featuredProjecten = [
+  ...FEATURED_TITLES.map((title) => projecten.find((p) => p.title === title)!),
+  ...projecten.filter((p) => !FEATURED_TITLES.includes(p.title)),
+];
+
 export const ProjectsSection = () => {
   const [filter, setFilter] = useState<Filter>("projecten");
 
-  const list = filter === "projecten" ? projecten : schetsontwerpen;
+  const list = filter === "projecten" ? featuredProjecten : schetsontwerpen;
   const dir = filter === "projecten" ? PROJECTEN_DIR : SCHETSONTWERPEN_DIR;
   const items = list.map((p) => ({ ...p, dir }));
 

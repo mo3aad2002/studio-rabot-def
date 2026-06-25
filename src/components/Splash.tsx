@@ -38,8 +38,8 @@ export const Splash = () => {
             <p className="display-serif text-[11px] uppercase tracking-[0.4em] text-muted-foreground mb-5">
               Interieurarchitectuur
             </p>
-            <h1 className="display-serif text-3xl md:text-5xl tracking-[-0.01em] text-foreground">
-              Studio <span className="italic text-accent">Rabot</span>
+            <h1 className="display-serif text-base md:text-lg uppercase tracking-[0.32em] text-foreground">
+              Studio Rabot
             </h1>
           </motion.div>
 

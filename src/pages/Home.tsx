@@ -32,7 +32,7 @@ const Home = () => {
           loading="eager"
         />
         {/* Dark overlay for contrast */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/40 to-black/65" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/30 to-black/55" />
 
         {/* Content */}
         <div className="relative h-full max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col justify-end pb-16 md:pb-24 pt-32">
@@ -72,7 +72,7 @@ const Home = () => {
                 een <span className="italic text-accent">ambacht.</span>
               </h2>
               <p className="mt-8 text-[16px] md:text-[17px] leading-[1.8] text-muted-foreground max-w-md">
-                Studio Rabot werd opgericht door Rogier Christiaens. Rogier heeft als interieurarchitect een voorliefde voor tijdloze architectuur, historische panden en het rustige drama van authentieke materialen en gepatineerde texturen.
+                Studio Rabot werd opgericht door Rogier Christiaens. Rogier heeft als interieurarchitect een voorliefde voor tijdloze architectuur, historische panden, authentieke materialen en gepatineerde texturen.
               </p>
               <div className="mt-10">
                 <Link to="/over-ons" className="btn-ghost">Bekijk ons verhaal</Link>
