@@ -32,7 +32,7 @@ const Home = () => {
           loading="eager"
         />
         {/* Dark overlay for contrast */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/30 to-black/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/20 to-black/45" />
 
         {/* Content */}
         <div className="relative h-full max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col justify-end pb-16 md:pb-24 pt-32">
