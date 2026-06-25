@@ -18,13 +18,13 @@ const Cookies = () => {
 
       <div className="space-y-10 text-[15px] leading-[1.8] text-foreground">
         <Reveal>
-          <p className="text-muted-foreground text-sm">Laatst bijgewerkt: 11 juni 2026</p>
+          <p className="text-muted-foreground text-sm">Laatst bijgewerkt: 25 juni 2026</p>
         </Reveal>
 
         <Reveal>
           <h2 className="display-serif text-2xl mb-3">1. Wat zijn cookies</h2>
           <p>
-            Cookies zijn kleine tekstbestanden die op uw toestel worden geplaatst wanneer u onze website bezoekt. Ze helpen de website correct te laten functioneren en stellen ons in staat het gebruik te analyseren.
+            Cookies zijn kleine tekstbestanden die op uw toestel worden geplaatst wanneer u een website bezoekt. Sommige cookies zijn noodzakelijk voor het correct functioneren van de website, andere worden geplaatst door externe diensten.
           </p>
         </Reveal>
 
@@ -34,20 +34,15 @@ const Cookies = () => {
           <div className="mt-4 space-y-6">
             <div>
               <p className="label-eyebrow mb-2">Functionele cookies</p>
-              <p>Noodzakelijk voor het functioneren van de website (bv. sessie- en voorkeursinstellingen). Deze worden zonder toestemming geplaatst.</p>
-            </div>
-
-            <div>
-              <p className="label-eyebrow mb-2">Analytische cookies</p>
               <p>
-                Wij gebruiken geanonimiseerde analytische cookies om te begrijpen hoe bezoekers onze website gebruiken (paginabezoeken, sessieduur, apparaattype). Deze cookies worden enkel geplaatst na uw toestemming.
+                Deze website maakt gebruik van Google Fonts voor de weergave van lettertypes. Hierbij worden verzoeken gestuurd naar servers van Google, wat mogelijk cookies kan plaatsen. Deze zijn noodzakelijk voor de correcte weergave van de website.
               </p>
             </div>
 
             <div>
               <p className="label-eyebrow mb-2">Cookies van derden</p>
               <p>
-                Bij het bekijken van ingebedde content (zoals de Google Maps kaart op onze contactpagina) kunnen cookies van derden geplaatst worden. Raadpleeg het privacybeleid van die partijen voor meer informatie.
+                Op de contactpagina is een Google Maps-kaart ingebed. Google kan via deze embed cookies plaatsen op uw toestel. Wij hebben geen controle over deze cookies. Raadpleeg het privacybeleid van Google voor meer informatie: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="link-underline">policies.google.com/privacy</a>.
               </p>
             </div>
           </div>
@@ -56,21 +51,14 @@ const Cookies = () => {
         <Reveal>
           <h2 className="display-serif text-2xl mb-3">3. Uw toestemming beheren</h2>
           <p>
-            U kan op elk moment uw cookie-instellingen aanpassen via uw browserinstellingen. Daarnaast kan u uw voorkeuren ook op elk moment wijzigen via de cookie-instellingen op onze website. Het uitschakelen van bepaalde cookies kan de werking van onze website beperken.
+            U kunt cookies beheren of verwijderen via uw browserinstellingen. Het uitschakelen van bepaalde cookies kan de weergave van de website beïnvloeden.
           </p>
         </Reveal>
 
         <Reveal>
-          <h2 className="display-serif text-2xl mb-3">4. Bewaartermijn</h2>
+          <h2 className="display-serif text-2xl mb-3">4. Meer informatie</h2>
           <p>
-            Sessiecookies worden verwijderd wanneer u uw browser sluit. Persistente cookies blijven maximaal 26 maanden bewaard.
-          </p>
-        </Reveal>
-
-        <Reveal>
-          <h2 className="display-serif text-2xl mb-3">5. Meer informatie</h2>
-          <p>
-            Voor vragen over ons cookiebeleid kan u terecht via <a href="mailto:rogier@studiorabot.be" className="link-underline">rogier@studiorabot.be</a>. Zie ook ons privacybeleid voor een ruimer overzicht van hoe wij met uw gegevens omgaan.
+            Voor vragen over dit cookiebeleid kunt u terecht via <a href="mailto:rogier@studiorabot.be" className="link-underline">rogier@studiorabot.be</a>. Zie ook ons privacybeleid voor een ruimer overzicht van hoe wij met uw gegevens omgaan.
           </p>
         </Reveal>
       </div>
